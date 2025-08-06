@@ -9,3 +9,6 @@ dependencies = [
     "pywttr>=4.0.0",
     "pywttr-models>=2.0.1",
 ]
+
+[project.scripts]
+wttr-mcp = "wttr-mcp.server:main"

@@ -1,7 +1,7 @@
 import asyncio
 from fastmcp import Client
 
-client = Client("main.py")
+client = Client("src/wttr-mcp/server.py")
 
 
 async def call_tool(location: str):
