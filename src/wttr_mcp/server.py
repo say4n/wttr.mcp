@@ -7,10 +7,14 @@ mcp = FastMCP("wttr.mcp", version="0.1.0")
 @mcp.tool(description="Get current weather for a location")
 def get_current_weather(location: str) -> dict:
     with pywttr.Wttr() as wttr:
-        return wttr.weather("Paris" if not location else location)
+        return wttr.weather("Paris" if not location else location).model_dump(
+            mode="json"
+        )
+
 
 def main():
     mcp.run()
+
 
 if __name__ == "__main__":
     main()
