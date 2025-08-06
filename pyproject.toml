@@ -1,0 +1,11 @@
+[project]
+name = "wttr-mcp"
+version = "0.1.0"
+description = "a mcp server for wttr.in"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastmcp>=2.11.2",
+    "pywttr>=4.0.0",
+    "pywttr-models>=2.0.1",
+]
