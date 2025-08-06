@@ -11,4 +11,8 @@ dependencies = [
 ]
 
 [project.scripts]
-wttr-mcp = "wttr-mcp.server:main"
+wttr-mcp = "wttr_mcp.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
